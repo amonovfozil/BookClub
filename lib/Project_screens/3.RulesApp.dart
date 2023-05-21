@@ -24,15 +24,21 @@ class Qollanma extends StatelessWidget {
           const SizedBox(height: 20),
           Container(
             height: 200,
+            clipBehavior: Clip.hardEdge,
             decoration: BoxDecoration(
               color: Colors.amber,
               borderRadius: BorderRadius.circular(5),
             ),
             child: const VideoPlayer1(
-                'https://firebasestorage.googleapis.com/v0/b/chatt-b6d58.appspot.com/o/videos%2Fanimation.mp4?alt=media&token=b39e6db7-8ab5-473b-adc2-c66153d41fb8',
+                'https://firebasestorage.googleapis.com/v0/b/project-d6b3b.appspot.com/o/videos%2FFan__Diskret_matematika_va_matematik_mantiqMavzu____tupikli_DHSH-tuzish%5B1%5D.mp4?alt=media&token=7f0a123d-0e65-49e9-8845-b90b87e18622',
                 true),
           ),
           const SizedBox(height: 20),
+          Text(
+            'Diskret matematika va matematik mantiq Mavzu: DHSH tuzish',
+            style: StylesText().style_1_11(14),
+          ),
+          const SizedBox(height: 30),
           Container(
             alignment: Alignment.center,
             decoration: BoxDecoration(
