@@ -69,7 +69,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       style: StylesText().style_1(22),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 45,
                   )
                 ],
