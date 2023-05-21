@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, must_be_immutable, non_constant_identifier_names, prefer_typing_uninitialized_variables
+// ignore_for_file: file_names, must_be_immutable, non_constant_identifier_names, prefer_typing_uninitialized_variables, use_build_context_synchronously
 
 import 'dart:io';
 
@@ -241,7 +241,7 @@ class _ViewFileSendState extends State<ViewFileSend> {
     return Container(
       color: Colors.black.withOpacity(0.9),
       child: isloading
-          ? Center(child: LinearProgressIndicator())
+          ? const Center(child: LinearProgressIndicator())
           : Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

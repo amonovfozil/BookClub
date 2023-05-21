@@ -84,7 +84,7 @@ class _AuthScreenState extends State<AuthScreen> {
         _isloading = false;
       });
     } catch (er) {
-      print(er);
+      // print(er);
       setState(() {
         _isloading = false;
       });

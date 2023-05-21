@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
         'icon': 'assets/icons/naviagtion/home.png',
       },
       {
-        'title': 'Chat',
+        'title': '  Chat  ',
         'icon': 'assets/icons/naviagtion/main.png',
       },
       {
@@ -62,6 +62,16 @@ class _HomeScreenState extends State<HomeScreen> {
                       size: 30,
                     ),
                   ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10),
+                    child: Text(
+                      'Smart Book',
+                      style: StylesText().style_1(22),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 45,
+                  )
                 ],
               ),
             ),
@@ -82,8 +92,8 @@ class _HomeScreenState extends State<HomeScreen> {
         width: double.infinity,
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(40),
-            topRight: Radius.circular(40),
+            topLeft: Radius.circular(35),
+            topRight: Radius.circular(35),
           ),
           color: Color(0xFF47406A),
         ),
@@ -114,11 +124,11 @@ class _HomeScreenState extends State<HomeScreen> {
                             ? const Color(0xFFF4B840)
                             : const Color(0xFF69628D),
                       ),
-                      const SizedBox(height: 5),
+                      const SizedBox(height: 8),
                       Text(menu['title'],
                           style: index == menus.indexOf(menu)
-                              ? StylesText().style_3_1(10)
-                              : StylesText().style_3(10)),
+                              ? StylesText().style_3_1(12)
+                              : StylesText().style_3(12)),
                     ],
                   ),
                 ),

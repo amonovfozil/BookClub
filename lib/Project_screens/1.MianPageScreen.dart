@@ -16,47 +16,23 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     List<Map<String, dynamic>> books = [
       {
-        'title': 'Maruza 1',
-        'dictor': 'Tohir Malik',
-        'url': 'assets/lectures/lec.pdf',
-        'info':
-            'Практикую все свои умения на работе, поэтому даю реальные знания и опыт. Отдельные программы обучения для детей и взрослых.',
+        'title': 'MATEMATIK MANTIQ VA DISKRET MATEMATIKA 1-qism',
+        'dictor': 'H. T. To\'rayev,            I. Azizov',
+        'url': 'assets/lectures/book3.pdf',
+        'img': 'assets/1qism.jpg',
       },
       {
-        'title': 'Maruza 2',
-        'dictor': 'Muhammad Yusuf',
-        'url': 'assets/lectures/3LEC.pdf',
-        'info': '',
+        'title': 'MATEMATIK MANTIQ VA DISKRET MATEMATIKA 2-qism',
+        'dictor': "H. T. To'rayev,             I. Azizov",
+        'url': 'assets/lectures/book1.pdf',
+        'img': 'assets/2qism.jpg',
       },
       {
-        'title': 'Maruza 3',
-        'dictor': 'Abdullo Yusupov',
-        'url': 'assets/lectures/4LEC.pdf',
-        'info': '',
-      },
-      {
-        'title': 'Maruza 4',
-        'dictor': 'Tom Nyurk',
-        'url': 'assets/lectures/5LEC.pdf',
-        'info': '',
-      },
-      {
-        'title': 'Maruza 5',
-        'dictor': 'Eddison',
-        'url': 'assets/lectures/6LEC.pdf',
-        'info': '',
-      },
-      {
-        'title': 'Maruza 6',
-        'dictor': 'Pushkin',
-        'url': 'assets/lectures/7LEC.pdf',
-        'info': '',
-      },
-      {
-        'title': 'Maruza 7',
-        'dictor': 'Amonov Fozil',
-        'url': 'assets/lectures/8LEC.pdf',
-        'info': '',
+        'title':
+            'DISKRET MATEMATIKA VA MATEMATIK MANTIQ FANIDA BUL FUNKSIYALAR',
+        'dictor': 'Gulrux Rustam qizi Sayliyeva',
+        'url': 'assets/lectures/book2.pdf',
+        'img': "assets/3book.jpg",
       },
     ];
     return Padding(
@@ -69,10 +45,9 @@ class _MainPageState extends State<MainPage> {
         children: [
           const SizedBox(height: 15),
           Text(
-            'Новости сервиса',
+            'KITOBLAR',
             style: StylesText().style_1_1(18),
           ),
-          const SizedBox(height: 15),
           Expanded(
             child: ListView(
               scrollDirection: Axis.vertical,
@@ -106,8 +81,10 @@ class _MainPageState extends State<MainPage> {
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: Image.asset(
-                                'assets/fon2.png',
-                                fit: BoxFit.cover,
+                                element['img'] == ''
+                                    ? 'assets/fon2.png'
+                                    : element['img'],
+                                fit: BoxFit.fill,
                               ),
                             ),
                             Expanded(
@@ -121,7 +98,7 @@ class _MainPageState extends State<MainPage> {
                                     Text(
                                       element['title'],
                                       textAlign: TextAlign.center,
-                                      style: StylesText().style_1_11(18),
+                                      style: StylesText().style_1_11(15),
                                     ),
                                     const SizedBox(height: 10),
                                     RichText(
@@ -137,16 +114,6 @@ class _MainPageState extends State<MainPage> {
                                                   StylesText().style_1_11(14)),
                                         ],
                                       ),
-                                    ),
-                                    const SizedBox(height: 10),
-                                    Text(
-                                      element['info'],
-                                      style: const TextStyle(
-                                          fontSize: 11,
-                                          height: 1.3,
-                                          fontWeight: FontWeight.w500,
-                                          color: Color(0xFF9A9A9A),
-                                          fontFamily: 'Gotham Pro medium'),
                                     ),
                                     const SizedBox(height: 10),
                                   ],

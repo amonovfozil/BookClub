@@ -18,7 +18,7 @@ class Qollanma extends StatelessWidget {
         children: [
           const SizedBox(height: 26),
           Text(
-            'Видеоролик',
+            'Video Qo\'lanma',
             style: StylesText().style_1_11(17),
           ),
           const SizedBox(height: 20),
@@ -46,12 +46,12 @@ class Qollanma extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
-                    'Info Project',
+                    'Mobil Ilova Haqida',
                     style: StylesText().style_1_11(17),
                   ),
                   const SizedBox(height: 20),
                   Text(
-                    'Практикую все свои умения на работе, поэтому даю реальные знания и опыт. Отдельные программы обучения для детей и взрослых.',
+                    'Ilova  "Diskret tuzilmalar fanidan talabalarning mustaqil ta`limini tashkil etishning teskari aloqa muhitini yaratish" mavzusidagi  Bituruv Malakaviy Ish uchun yaratildi',
                     style: StylesText().style_2_2(14),
                   ),
                 ],

@@ -108,9 +108,7 @@ class SideBar extends StatelessWidget {
                                     Icons.home,
                                     'Bosh Sahifa',
                                   ),
-                                  const Divider(
-                                    height: 0,
-                                  ),
+                                  const Divider(height: 0),
                                 ]),
                           ),
                         ),
