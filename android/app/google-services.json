@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "846997267014",
-    "project_id": "project-d6b3b",
-    "storage_bucket": "project-d6b3b.appspot.com"
+    "project_number": "519197861769",
+    "project_id": "chatt-b6d58",
+    "storage_bucket": "chatt-b6d58.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:846997267014:android:cd5c09e2c76cbbdc602047",
+        "mobilesdk_app_id": "1:519197861769:android:dc457e2b52acc0cdf96358",
         "android_client_info": {
           "package_name": "com.example.project1"
         }
       },
       "oauth_client": [
         {
-          "client_id": "846997267014-jm59afmdjlgqtp20o44fs2ccvfgh78e6.apps.googleusercontent.com",
+          "client_id": "519197861769-nb582o5g5u7t4j5iae2p56eo4elajinb.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDyWBKi6y1ASRVFFVKEABgukwX9lW_xKhI"
+          "current_key": "AIzaSyACXuvLVEMd52V0TWP-UyqfOERQ_OQmU58"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "846997267014-jm59afmdjlgqtp20o44fs2ccvfgh78e6.apps.googleusercontent.com",
+              "client_id": "519197861769-nb582o5g5u7t4j5iae2p56eo4elajinb.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

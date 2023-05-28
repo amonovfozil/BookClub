@@ -86,7 +86,11 @@ flutter:
     - assets/icons/naviagtion/
     - assets/icons/sidebar/
     - assets/fonts/
+    - assets/books/
     - assets/lectures/
+    - assets/amaliy/
+    - assets/mustaqil/
+    - assets/test/
     - assets/
     - devassets/
     

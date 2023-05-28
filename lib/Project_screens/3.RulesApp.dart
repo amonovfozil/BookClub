@@ -30,7 +30,7 @@ class Qollanma extends StatelessWidget {
               borderRadius: BorderRadius.circular(5),
             ),
             child: const VideoPlayer1(
-                'https://firebasestorage.googleapis.com/v0/b/project-d6b3b.appspot.com/o/videos%2FFan__Diskret_matematika_va_matematik_mantiqMavzu____tupikli_DHSH-tuzish%5B1%5D.mp4?alt=media&token=7f0a123d-0e65-49e9-8845-b90b87e18622',
+                'https://firebasestorage.googleapis.com/v0/b/chatt-b6d58.appspot.com/o/QO%60LLANMA%2FFan__Diskret_matematika_va_matematik_mantiqMavzu____tupikli_DHSH-tuzish%5B1%5D.mp4?alt=media&token=663e32b1-ef16-41e9-a748-49594e3637bb',
                 true),
           ),
           const SizedBox(height: 20),

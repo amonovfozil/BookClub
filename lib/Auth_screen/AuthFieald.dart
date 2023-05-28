@@ -37,7 +37,7 @@ class _AuthFieldState extends State<AuthField> {
     if (getImage == null && !isLogin) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          backgroundColor: Theme.of(context).errorColor,
+          backgroundColor: Theme.of(context).colorScheme.error,
           content: const Text(
             'Please enter Avatar',
           ),

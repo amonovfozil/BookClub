@@ -5,6 +5,7 @@ import 'package:project1/Helper/text_styles.dart';
 import 'package:project1/Project_screens/1.MianPageScreen.dart';
 import 'package:project1/Project_screens/2.ChatScreen.dart';
 import 'package:project1/Project_screens/3.RulesApp.dart';
+import 'package:project1/Project_screens/LessonsBook/lessonbooksPage_screen.dart';
 import 'package:project1/Project_screens/SideBar.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -21,15 +22,19 @@ class _HomeScreenState extends State<HomeScreen> {
     final scaffoldKey = GlobalKey<ScaffoldState>();
     List<Map<String, dynamic>> menus = [
       {
-        'title': 'Bosh Sahifa',
+        'title': 'DARSLIKLAR',
+        'icon': 'assets/icons/naviagtion/letter.png',
+      },
+      {
+        'title': 'KUTUBXONA',
         'icon': 'assets/icons/naviagtion/home.png',
       },
       {
-        'title': '  Chat  ',
+        'title': '  CHAT  ',
         'icon': 'assets/icons/naviagtion/main.png',
       },
       {
-        'title': 'Qo`llanma',
+        'title': 'QO\'LLANMA',
         'icon': 'assets/icons/naviagtion/pupil.png',
       },
     ];
@@ -78,12 +83,14 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           Expanded(
             child: index == 0
-                ? const MainPage()
+                ? const LessonBooks()
                 : index == 1
-                    ? const ChatScreen()
+                    ? const MainPage()
                     : index == 2
-                        ? Qollanma()
-                        : Container(),
+                        ? const ChatScreen()
+                        : index == 3
+                            ? Qollanma()
+                            : Container(),
           ),
         ],
       ),
@@ -127,8 +134,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       const SizedBox(height: 8),
                       Text(menu['title'],
                           style: index == menus.indexOf(menu)
-                              ? StylesText().style_3_1(12)
-                              : StylesText().style_3(12)),
+                              ? StylesText().style_3_1(10)
+                              : StylesText().style_3(10)),
                     ],
                   ),
                 ),

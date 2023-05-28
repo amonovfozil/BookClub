@@ -159,12 +159,12 @@ class SideBar extends StatelessWidget {
                 },
                 icon: Icon(
                   Icons.logout,
-                  color: Theme.of(context).errorColor,
+                  color: Theme.of(context).colorScheme.error,
                 ),
                 label: Text(
                   'Log out',
                   style: TextStyle(
-                    color: Theme.of(context).errorColor,
+                    color: Theme.of(context).colorScheme.error,
                   ),
                 ),
               ),

@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:project1/Helper/text_styles.dart';
 import 'package:project1/Project_screens/widgets/PDF_Viewer.dart';
+import 'package:project1/data/booksList.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({super.key});
@@ -14,27 +15,6 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
-    List<Map<String, dynamic>> books = [
-      {
-        'title': 'MATEMATIK MANTIQ VA DISKRET MATEMATIKA 1-qism',
-        'dictor': 'H. T. To\'rayev,            I. Azizov',
-        'url': 'assets/lectures/book3.pdf',
-        'img': 'assets/1qism.jpg',
-      },
-      {
-        'title': 'MATEMATIK MANTIQ VA DISKRET MATEMATIKA 2-qism',
-        'dictor': "H. T. To'rayev,             I. Azizov",
-        'url': 'assets/lectures/book1.pdf',
-        'img': 'assets/2qism.jpg',
-      },
-      {
-        'title':
-            'DISKRET MATEMATIKA VA MATEMATIK MANTIQ FANIDA BUL FUNKSIYALAR',
-        'dictor': 'Gulrux Rustam qizi Sayliyeva',
-        'url': 'assets/lectures/book2.pdf',
-        'img': "assets/3book.jpg",
-      },
-    ];
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child:
@@ -51,7 +31,7 @@ class _MainPageState extends State<MainPage> {
           Expanded(
             child: ListView(
               scrollDirection: Axis.vertical,
-              children: books.map((element) {
+              children: booklist.books.map((element) {
                 return Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 5),
                   child: InkWell(
