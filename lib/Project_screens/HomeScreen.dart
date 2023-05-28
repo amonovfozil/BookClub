@@ -39,6 +39,7 @@ class _HomeScreenState extends State<HomeScreen> {
       },
     ];
     return Scaffold(
+      backgroundColor: Colors.white,
       key: scaffoldKey,
       drawer: const SideBar(),
       body: Column(

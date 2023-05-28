@@ -213,22 +213,22 @@ class booklist {
     {
       'title': "1-Mustaqil ish",
       'url': 'assets/mustaqil/1.pdf',
-      'img': 'assets/amaliy/img2.jpg',
+      'img': 'assets/mustaqil/img2.jpg',
     },
     {
       'title': "2-Mustaqil ish",
       'url': 'assets/mustaqil/2.pdf',
-      'img': 'assets/amaliy/img2.jpg',
+      'img': 'assets/mustaqil/img2.jpg',
     },
     {
       'title': "3-Mustaqil ish",
       'url': 'assets/mustaqil/3.pdf',
-      'img': "assets/amaliy/img2.jpg",
+      'img': "assets/mustaqil/img2.jpg",
     },
     {
       'title': "4-Mustaqil ish",
       'url': 'assets/mustaqil/4.pdf',
-      'img': "assets/amaliy/img2.jpg",
+      'img': "assets/mustaqil/img2.jpg",
     },
   ];
   static List<Map<String, dynamic>> test = [
